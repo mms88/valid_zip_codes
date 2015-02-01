@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'valid_zip_codes'
-  s.version     = '0.0.3'
+  s.version     = '0.0.4'
   s.date        = '2015-02-01'
   s.summary     = "Validate zip codes and get city names"
   s.description = "Gem to validate zip codes and get city names. Currently only for DK, SE, GL and FO."
