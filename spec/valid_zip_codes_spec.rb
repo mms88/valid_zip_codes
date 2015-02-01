@@ -7,8 +7,17 @@ describe "ValidZipCodes" do
 	end
 
 	context "is_valid_zip" do
+
 		it "should return true on valid zip in DK" do 
 			expect(@validator.is_valid_zip?("DK", 8600)).to be(true)
+		end
+
+		it "should return true on valid zip in FO" do 
+			expect(@validator.is_valid_zip?("FO", 100)).to be(true)
+		end
+
+		it "should return true on valid zip in FO" do 
+			expect(@validator.is_valid_zip?("GL", 3905)).to be(true)
 		end
 
 		it "should throw exception if country not supported" do 
