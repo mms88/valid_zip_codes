@@ -7,13 +7,21 @@ Extremely simple ruby gem which is build to validate ZIP codes in nordic countri
 
 ## Usage
 
+```ruby
 validator = ValidZipCodes.new
+```
 
-* Check if zip code is valid
+Check if zip code is valid
+```ruby
 validator.is_valid_zip?("DK", 8000)
+```
 
-* Get the city name for zip code
+Get the city name for zip code
+```ruby
 validator.get_city_name("DK", 8000)
+```
 
-* Check if gem supports country
+Check if gem supports country
+```ruby
 validator.supports_country?("DK")
+```
