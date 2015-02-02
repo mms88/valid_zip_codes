@@ -20,6 +20,11 @@ describe "ValidZipCodes" do
 			expect(@validator.is_valid_zip?("GL", 3905)).to be(true)
 		end
 
+		it "should return true on valid zip in NO" do 
+			expect(@validator.is_valid_zip?("NO", 9760)).to be(true)
+		end
+
+
 		it "should throw exception if country not supported" do 
 			expect{@validator.is_valid_zip?("US", 8000)}.to raise_error
 		end
@@ -41,6 +46,10 @@ describe "ValidZipCodes" do
 
 		it "should return correct city name for city in SE" do 
 			expect(@validator.get_city_name("SE", 18622)).to eq("Vallentuna")
+		end
+
+		it "should return correct city name for city in NO" do 
+			expect(@validator.get_city_name("NO", 9760)).to eq("NORDVÅGEN")
 		end
 
 	end

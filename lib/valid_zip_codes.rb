@@ -2,7 +2,7 @@ require 'yaml'
 
 class ValidZipCodes
 
-	SUPPORTED_COUNTRIES = ["DK", "SE", "FO", "GL"]
+	SUPPORTED_COUNTRIES = ["DK", "SE", "FO", "GL", "NO"]
 
 	# Constructor
 	def initialize load_all = false
